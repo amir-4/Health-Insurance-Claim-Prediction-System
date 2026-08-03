@@ -4,75 +4,103 @@
 
   <img src="https://img.shields.io/badge/Python-3.12-blue?style=for-the-badge&logo=python" />
   <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas" />
+  <img src="https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?style=for-the-badge&logo=numpy" />
   <img src="https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?style=for-the-badge&logo=scikit-learn" />
+  <img src="https://img.shields.io/badge/XGBoost-Gradient%20Boosting-189AB4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Plotly-Visualization-3F4F75?style=for-the-badge&logo=plotly" />
   <img src="https://img.shields.io/badge/Streamlit-Deployment-FF4B4B?style=for-the-badge&logo=streamlit" />
-  <img src="https://img.shields.io/badge/Random%20Forest-Final%20Model-2E8B57?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Joblib-Model%20Serialization-2E8B57?style=for-the-badge" />
 
 </p>
 
 <p align="center">
-  <b>An end-to-end supervised machine learning project for predicting health insurance claim costs.</b>
+
+### 🚀 An End-to-End Supervised Machine Learning Project for Predicting Health Insurance Claim Costs
+
 </p>
 
 ---
 
 ## 📌 Project Overview
 
-This project focuses on building a **Health Insurance Claim Prediction System** using supervised machine learning.
+**Health Insurance Claim Prediction** is an end-to-end supervised machine learning project developed to estimate health insurance claim costs based on customer demographic, health, lifestyle, and geographic characteristics.
 
-The goal is to estimate the expected insurance claim amount based on customer characteristics such as:
+The project covers the complete machine learning workflow — from **data exploration and feature engineering to model development, optimization, evaluation, error analysis, and deployment**.
 
-- Age
-- Gender
-- BMI
-- Blood Pressure
-- Diabetic Status
-- Number of Children
-- Smoking Status
-- Region
-
-The project follows a complete machine learning workflow, starting from **data exploration and feature engineering** and ending with **model optimization, evaluation, and deployment through Streamlit**.
+The final solution is deployed as an interactive **Streamlit web application**, allowing users to enter customer information and receive an estimated insurance claim.
 
 ---
 
 ## 🎯 Project Objectives
 
-- Analyze the factors associated with insurance claim costs.
-- Prepare and preprocess the dataset for machine learning.
-- Engineer meaningful features.
-- Compare multiple regression algorithms.
-- Optimize the best-performing model.
-- Evaluate model performance on unseen data.
+The main objectives of this project are to:
+
+- Understand the factors associated with insurance claim costs.
+- Perform exploratory data analysis to identify meaningful patterns.
+- Prepare numerical and categorical features for machine learning.
+- Engineer additional features that may improve predictive performance.
+- Build and compare multiple regression models.
+- Apply cross-validation to evaluate model generalization.
+- Optimize the best-performing model using hyperparameter tuning.
 - Analyze model errors and learning behavior.
-- Deploy the final model as an interactive web application.
+- Save the trained model and preprocessing pipeline.
+- Deploy the final solution through an interactive Streamlit application.
 
 ---
 
-## 🔄 Machine Learning Workflow
+# 🔄 Machine Learning Workflow
 
 ```text
-Data Collection
-      ↓
-Data Cleaning
-      ↓
-Exploratory Data Analysis
-      ↓
-Feature Engineering
-      ↓
-Train / Test Split
-      ↓
-Preprocessing Pipeline
-      ↓
-Model Training
-      ↓
-Cross-Validation
-      ↓
-Hyperparameter Optimization
-      ↓
-Model Evaluation
-      ↓
-Error Analysis
-      ↓
-Model Serialization
-      ↓
-Streamlit Deployment
+                ┌─────────────────────┐
+                │    Data Import      │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │   Data Cleaning     │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │        EDA          │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │ Feature Engineering │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │ Train / Test Split  │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │   Preprocessing     │
+                │ ColumnTransformer   │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │ Model Development   │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │ Cross-Validation     │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │ Hyperparameter      │
+                │ Optimization        │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │ Model Evaluation    │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │ Error Analysis      │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │ Model Serialization │
+                └──────────┬──────────┘
+                           ↓
+                ┌─────────────────────┐
+                │ Streamlit Deployment│
+                └─────────────────────┘
